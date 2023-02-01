@@ -2,7 +2,7 @@ import Transaction from "../models/Transaction.js";
 
 export const index = async (req, res) => {
 
-    const transaction = await Transaction.find({user_id: req.user._id}).sort({createdAt: -1})
+    //const transaction = await Transaction.find({user_id: req.user._id}).sort({createdAt: -1})
     
     const demo = await Transaction.aggregate([
         {
